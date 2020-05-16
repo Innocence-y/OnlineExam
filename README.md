@@ -1,8 +1,11 @@
 # 毕业设计 --基于B/S架构的JavaWeb在线考试系统
 
-```
-本文档只是对本人毕业设计的说明文档，并没有上传相关的源代码和数据库文件，如有需要，请联系作者：邮箱：2274747912@qq.com  QQ：2274747912  备注请写明您的意图！
-```
+
+
+本文档只是对本人毕业设计的说明文档，并没有上传相关的源代码和数据库文件，如有需要，请联系作者。
+邮箱：13834697883@163.com  QQ：2274747912  备注请写明您的意图！
+
+
 
 ### 项目亮点：
 ***
@@ -25,11 +28,11 @@
 
 
 ***
-项目为maven管理，最近集成了redis，所以在运行项目是先要下载redis并启动客户端，方可正常运行项目，由于只需要下载redis，无需其他配置，这里就不做过多说明。
+项目为maven管理，集成了redis，所以在运行项目是先要下载redis并启动客户端，方可正常运行项目，由于只需要下载redis，无需其他配置，这里就不做过多说明。
 
 ### 最近更新
 ***
-集成redis来保存用户登录信息，添加过滤器重置用户登录有效期。拦截器实现统一登录和权限校验（相关重构还未完成）。
+集成redis来保存用户登录信息，添加过滤器重置用户登录有效期。拦截器实现统一登录和权限校验。
 
 
 ### 项目采用前后端分离技术实现
@@ -38,119 +41,159 @@
 - 缓存：redis
 - 数据库：MySQL
 - IDE：Intellij IDEA
-- 其他：Maven，Git
+- 其他：Maven，Git， Tomcat， BootStrap， PageHelper， Echarts
 
 ### 项目实际效果
 登录首页：不同用户角色的登录，进入相应的界面
-![登录首页](picture/不同用户角色的登录功能.png)
+![登录首页](https://upload-images.jianshu.io/upload_images/3256507-9a57fec3858718cb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ---
 教师成功登录界面查看题库信息
-![教师成功登录界面查看题库信息](picture/教师成功登录界面查看题库信息.png)
+![教师成功登录界面查看题库信息](https://upload-images.jianshu.io/upload_images/3256507-fbf233d991419d88.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 忘记密码的回答问题功能
-![忘记密码的回答问题功能](picture/忘记密码的回答问题功能.png)
+![忘记密码的回答问题功能.jpg](https://upload-images.jianshu.io/upload_images/3256507-b402058183a77fa3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 忘记密码的重置密码功能
-![忘记密码的重置密码功能](picture/忘记密码的重置密码功能.png)
+![忘记密码的重置密码功能](https://upload-images.jianshu.io/upload_images/3256507-5475f5a62fde0b3a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 查看试卷界面
-![查看试卷界面](picture/查看试题界面.png)
+![查看试卷界面](https://upload-images.jianshu.io/upload_images/3256507-557ce686a0092098.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 查看所有试卷界面
-![查看所有试卷界面](picture/查看所有试卷界面.png)
+![查看所有试卷界面](https://upload-images.jianshu.io/upload_images/3256507-6442c8bb751ee373.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 查看试题详情
-![查看试题详情](picture/查看试题详情.png)
+![查看试题详情](https://upload-images.jianshu.io/upload_images/3256507-ae912dafbb5cdd6c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 查看试题详情界面
-![查看试题详情界面](picture/查看试题详情界面.png)
+![查看试题详情界面](https://upload-images.jianshu.io/upload_images/3256507-887f3a99b5fbf3dc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 新增试题界面
-![新增试题界面](picture/新增试题界面.png)
+![新增试题界面](https://upload-images.jianshu.io/upload_images/3256507-d95b7d1a311e8e28.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 教师手动组卷
-![教师手动组卷](picture/教师手动组卷.png)
+![教师手动组卷](https://upload-images.jianshu.io/upload_images/3256507-9d113a50cfc2394e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 教师自动出题
-![教师自动出题](picture/教师自动出题.png)
+![教师自动出题](https://upload-images.jianshu.io/upload_images/3256507-b56286e9bf47c9fb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 查看参加考试学生成绩
-![查看参加考试学生成绩](picture/查看参加考试学生成绩.png)
+![查看参加考试学生成绩](https://upload-images.jianshu.io/upload_images/3256507-8d9b3bc4e4387ee8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 管理试题功能
-![管理试题功能](picture/管理试题功能.png)
+![管理试题功能](https://upload-images.jianshu.io/upload_images/3256507-b35b6834812a87c2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 试卷预览界面
-![试卷预览界面](picture/试卷预览界面.png)
+![试卷预览界面](https://upload-images.jianshu.io/upload_images/3256507-801f980aa0602cb3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 试卷发布
-![试卷发布](picture/试卷发布.png)
+![试卷发布](https://upload-images.jianshu.io/upload_images/3256507-e7e0565db904d5c1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 试题数量统计界面
-![试题数量统计界面](picture/试题数量统计界面.png)
+![试题数量统计界面](https://upload-images.jianshu.io/upload_images/3256507-de3de5e81c86f3bb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
 ---
 选择试卷发布的专业
-![选择试卷发布的专业](picture/选择试卷发布的专业.png)
+![选择试卷发布的专业](https://upload-images.jianshu.io/upload_images/3256507-a2ed0b6b2da17107.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
-试题数量统计界面
-![试题数量统计界面](picture/试题数量统计界面.png)
+分数区间饼状图统计
+![分数区间饼状图统计](https://upload-images.jianshu.io/upload_images/3256507-7b8a3902f02f5ea8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 成绩区间统计
-![成绩区间统计](picture/成绩区间统计.png)
+![成绩区间统计](https://upload-images.jianshu.io/upload_images/3256507-b46f69033fadc760.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 成绩区间统计饼图
-![成绩区间统计饼图](picture/成绩区间统计饼图.png)
+![成绩区间统计饼图](https://upload-images.jianshu.io/upload_images/3256507-addae98b311532a9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 成绩极值均值统计
-![成绩极值均值统计](picture/成绩极值均值统计.png)
+![成绩极值均值统计](https://upload-images.jianshu.io/upload_images/3256507-926bd57c3b6291e3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 成绩优秀率统计
-![成绩优秀率统计](picture/成绩优秀率统计.png)
+![成绩优秀率统计](https://upload-images.jianshu.io/upload_images/3256507-2a25fdf56ffcfe69.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 学生成功登录界面
-![学生成功登录界面](picture/学生成功登录界面.png)
+![学生成功登陆界面](https://upload-images.jianshu.io/upload_images/3256507-005fa6cfa652d466.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
-学生查看考试信息功能
-![学生查看考试信息功能](picture/学生查看考试信息功能.png)
+学生查看试卷功能
+![学生查看试卷功能](https://upload-images.jianshu.io/upload_images/3256507-f34b246a8ce96982.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ---
 学生参加考试功能
-![学生参加考试功能](picture/学生参加考试功能.png)
+![学生参加考试功能.jpg](https://upload-images.jianshu.io/upload_images/3256507-7310f17e4a6f2011.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 学生查看考试成绩柱状图展示
-![学生查看考试成绩柱状图展示](picture/学生查看考试成绩柱状图展示.png)
+![学生查看考试成绩柱状图展示](https://upload-images.jianshu.io/upload_images/3256507-5c585961c6adc4c8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 学生查询成绩功能
-![学生查询成绩功能](picture/学生查询成绩功能.png)
+![学生查询成绩功能](https://upload-images.jianshu.io/upload_images/3256507-4dfde984c32cba29.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 做了一个词云
-![做了一个词云](picture/做了一个词云.png)
+![做了一个词云](https://upload-images.jianshu.io/upload_images/3256507-2bfb89cdf749d506.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 管理员通知管理
-![管理员通知管理](picture/管理员通知管理.png)
+![管理员通知管理](https://upload-images.jianshu.io/upload_images/3256507-c6cf836bacfb23e2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 管理员教师和学生管理
-![管理员教师和学生管理](picture/管理员教师和学生管理.png)
+![管理员教师和学生管理](https://upload-images.jianshu.io/upload_images/3256507-767a2c0d75e12759.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 管理员对专业的管理
-![管理员对专业的管理](picture/管理员对专业的管理.png)
+![管理员对专业的管理](https://upload-images.jianshu.io/upload_images/3256507-91f3cb5f9dfaacd1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 年级统计可视化
-![年级统计可视化](picture/年级统计可视化.png)
+![专业统计可视化](https://upload-images.jianshu.io/upload_images/3256507-14775a2cb1292a66.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 专业统计可视化
-![专业统计可视化](picture/专业统计可视化.png)
+![专业统计可视化](https://upload-images.jianshu.io/upload_images/3256507-0f7d6712af2e7670.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 数据库截图
-![数据库截图](picture/数据库截图.png)
+![数据库截图](https://upload-images.jianshu.io/upload_images/3256507-40f76c5a5d1cbf0d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 代码截图
-![代码截图](picture/代码截图.png)
+![代码截图](https://upload-images.jianshu.io/upload_images/3256507-a1025958c467c029.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
-总体设计
-![总体设计](picture/总体设计.png)
+总体设计1
+![总体设计1](https://upload-images.jianshu.io/upload_images/3256507-e2c80d9d856b670a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+---
+总体设计2
+![总体设计2](https://upload-images.jianshu.io/upload_images/3256507-ccfaa9d02116804a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ---
 总体设计图
-![总体设计图](picture/总体设计图.png)
+![系统总体设计](https://upload-images.jianshu.io/upload_images/3256507-adb45719d9b2dfd5.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 ### 系统功能
 ***
@@ -187,7 +230,7 @@
 后端采用Spring框架进行整合，SpringMVC作为Web MVC框架,  使用Mybatis作为持久层框架，使用MySQL作为持久化数据库，使用Redis作为缓存数据库，使用Mybatis PageHelper作为分页技术，使用logback作为日志框架，使用Apache dbcp数据库连接池，使用Mybatis-generator进行自动生成Mapper，使用Maven进行项目依赖管理。
 
 ---
-**本文档只是对本人毕业设计的说明文档，并没有上传相关的源代码和数据库文件，如有需要，请联系作者：邮箱：2274747912@qq.com                 QQ：2274747912  备注请写明您的意图！**
+**本文档只是对本人毕业设计的说明文档，并没有上传相关的源代码和数据库文件，如有需要，请联系作者：邮箱：13834697883@163.com                 QQ：2274747912  备注请写明您的意图！**
 
         
       
